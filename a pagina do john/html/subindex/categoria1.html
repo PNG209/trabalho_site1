@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossas Delícias</title>
+
+    <!-- Importa o CSS -->
+    <link rel="stylesheet" href="../../css/substyle/substyle.css">
+</head>
+<body>
+
+    <!-- =========================== -->
+    <!--        CABEÇALHO / MENU     -->
+    <!-- =========================== -->
+    <header class="topo">
+        <nav>
+            <ul>
+                <!-- Cada item do menu -->
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a class="ativo" href="../cardapo.html">Nossas Delícias</a></li>
+                <li><a href="#">Pedidos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+            <!-- Área de login -->
+            <div class="login-area">
+                <span>Bem-vindo(a)!</span>
+                <a href="#">Entrar</a>
+                <a href="#">Criar Conta</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================================= -->
+    <!--    BANNER PRINCIPAL DA PÁGINA     -->
+    <!-- ================================= -->
+    <section class="banner">
+        <div class="banner-conteudo">
+            <h1>Nossas Delícias: Coleção Doçuras Clássicas</h1>
+            <p>Descubra a variedade e o sabor inigualável dos nossos produtos artesanais.</p>
+        </div>
+    </section>
+
+    <!-- =============================== -->
+    <!--          CARRINHO               -->
+    <!-- =============================== -->
+    <div class="carrinho">
+        Carrinho: <span id="carrinho-numero">0</span> itens
+        <button class="btn-reset" onclick="resetarCarrinho()">Resetar</button>
+        <button><a href="/a pagina do john/html/carrinho.html">botao</a></button>
+    </div>
+
+
+    <!-- =============================== -->
+    <!--        LISTA DE CATEGORIAS      -->
+    <!-- =============================== -->
+    <section class="categorias">
+
+        <!-- Cada categoria possui foto + nome + lista -->
+
+        <!-- ====================== -->
+        <!-- CATEGORIA 1  -->
+        <!-- ====================== -->
+        <div class="categoria">
+            <div class="img-area">
+                <!-- Aqui você coloca depois: src="minhafoto.jpg" -->
+                <img src="" alt="Imagem Categoria 1">
+            </div>
+            <div class="categoria-info">
+                <h2>Brigadeiro Gourmet 70%</h2>
+
+                <ul>
+                    <p>Preço: R$XX.xx</p>
+                    <label>Unidades:</label>
+                    <input type="number" id="qtd_brigadeiro" min="1" value="1">
+                    <p><a href="#">COMPRAR</a></p>
+                    <button class="btn-add" onclick="adicionarCarrinho('cafe', this)">Adicionar ao carrinho</button>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- ====================== -->
+        <!-- CATEGORIA 2 -->
+        <!-- ====================== -->
+        <div class="categoria">
+            <div class="categoria-info">
+                <h2>Beijinho de Coco Seleto</h2>
+                <ul>
+                    <p>Preço: R$XX.xx</p>
+                    <label for="quantidade">Unidades:</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1" max="10" value="1">
+                    <p><a href="#">COMPRAR</a></p>
+                    <button class="btn-add" onclick="adicionarCarrinho('BCS', this)">Adicionar ao carrinho</button>
+                </ul>
+            </div>
+            <div class="img-area">
+                <img src="" alt="Imagem Categoria 2">
+            </div>
+        </div>
+
+        <!-- ====================== -->
+        <!-- CATEGORIA 3 -->
+        <!-- ====================== -->
+        <div class="categoria">
+            <div class="img-area">
+                <img src="" alt="Imagem Categoria 3">
+            </div>
+            <div class="categoria-info">
+                <h2>Brownie Intensidade 70%</h2>
+                <ul>
+                    <p>Preço: R$XX.xx</p>
+                    <label for="quantidade">Unidades:</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1" max="10" value="1">
+                    <p><a href="#">COMPRAR</a></p>
+                    <button class="btn-add" onclick="adicionarCarrinho('BI70', this)">Adicionar ao carrinho</button>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ====================== -->
+        <!-- CATEGORIA 4 -->
+        <!-- ====================== -->
+        <div class="categoria">
+            <div class="categoria-info">
+                <h2>Palha Italiana Premium</h2>
+                <ul>
+                    <p>Preço: R$XX.xx</p>
+                    <label for="quantidade">Unidades:</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1" max="10" value="1">
+                    <p><a href="#">COMPRAR</a></p>
+                    <button class="btn-add" onclick="adicionarCarrinho('PIP', this)">Adicionar ao carrinho</button>
+                </ul>
+            </div>
+            <div class="img-area">
+                <img src="" alt="Imagem Categoria 4">
+            </div>
+        </div>
+
+        <!-- ====================== -->
+        <!-- CATEGORIA 5 -->
+        <!-- ====================== -->
+        <div class="categoria">
+            <div class="img-area">
+                <img src="" alt="Imagem Categoria 5">
+            </div>
+            <div class="categoria-info">
+                <h2>Bolo Caseiro da Casa</h2>
+                <ul>
+                    <p>Preço: R$XX.xx</p>
+                    <label for="quantidade">Unidades:</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1" max="10" value="1">
+                    <p><a href="#">COMPRAR</a></p>
+                    <button class="btn-add" onclick="adicionarCarrinho('BCC', this)">Adicionar ao carrinho</button>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================== -->
+    <!--              RODAPÉ             -->
+    <!-- =============================== -->
+    <footer class="rodape">
+
+        <div class="col">
+            <p>Delícias artesanais feitas com amor.</p>
+        </div>
+
+        <div class="col">
+            <h3>Navegação</h3>
+            <a href="#">Início</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Nossas Delícias</a>
+            <a href="#">Pedidos</a>
+            <a href="#">Contato</a>
+        </div>
+
+        <div class="col">
+            <h3>Informações</h3>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos do Serviço</a>
+            <a href="#">FAQ</a>
+        </div>
+
+        <div class="col">
+            <h3>Contato</h3>
+            <p>Rua das Delícias, 182, Cidade Saborosa</p>
+            <p>Tel: (11) 99999-9999</p>
+            <p>Email: contato@valesabores.com</p>
+        </div>
+
+    </footer>
+
+    <div class="copy">
+        © 2025 Vale dos Sabores. Todos os direitos reservados.
+    </div>
+<script src="../../JS/carrinhoscript copy.js"></script>
+</body>
+</html>
