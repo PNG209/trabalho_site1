@@ -3,3 +3,4 @@ function adicionarCarrinho(nome, preco) {
     carrinho.push({ nome, preco });
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
     alert(nome + " adicionado ao carrinho!");
+}

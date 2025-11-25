@@ -49,7 +49,7 @@
     <div class="carrinho">
         Carrinho: <span id="carrinho-numero">0</span> itens
         <button class="btn-reset" onclick="resetarCarrinho()">Resetar</button>
-        <button><a href="/a pagina do john/html/carrinho.html">botao</a></button>
+        <button><a href="carrinho.html">botao</a></button>
     </div>
 
 
@@ -59,6 +59,48 @@
     <section class="categorias">
 
         <!-- Cada categoria possui foto + nome + lista -->
+
+
+
+
+
+        <!-- ====================== -->
+        <!-- CATEGORIA 0  -->
+        <!-- ====================== -->
+        <div class="categoria">
+            <div class="img-area">
+                <!-- Aqui você coloca depois: src="minhafoto.jpg" -->
+                <img src="" alt="Imagem Categoria 1">
+            </div>
+            <!-- ====================== -->
+            <div class="categoria-info">
+                <h2>Brigadeiro Gourmet 70%</h2>
+
+                <ul>
+                    <p>Preço: R$XX.xx</p>
+                    <label>Unidades:</label>
+                    <input type="number" id="qtd_brigadeiro" min="1" value="1">
+                    <p><a href="#">COMPRAR</a></p>
+                    <button class="btn-add" onclick="adicionarCarrinho('cafe', '1')">Adicionar ao carrinho</button>
+
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- ====================== -->
         <!-- CATEGORIA 1  -->
@@ -76,7 +118,7 @@
                     <label>Unidades:</label>
                     <input type="number" id="qtd_brigadeiro" min="1" value="1">
                     <p><a href="#">COMPRAR</a></p>
-                    <button class="btn-add" onclick="adicionarCarrinho('cafe', this)">Adicionar ao carrinho</button>
+                    <button class="btn-add" onclick="adicionarCarrinho('cafe', '1')">Adicionar ao carrinho</button>
 
                 </ul>
             </div>
@@ -196,6 +238,6 @@
     <div class="copy">
         © 2025 Vale dos Sabores. Todos os direitos reservados.
     </div>
-<script src="../../JS/carrinhoscript copy.js"></script>
+<script src="../../JS/script2.js"></script>
 </body>
 </html>
