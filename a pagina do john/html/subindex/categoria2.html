@@ -44,15 +44,6 @@
     </section>
 
     <!-- =============================== -->
-    <!--          CARRINHO               -->
-    <!-- =============================== -->
-    <div class="carrinho">
-        Carrinho: <span id="carrinho-numero">0</span> itens
-        <button class="btn-reset" onclick="resetarCarrinho()">Resetar</button>
-        <button><a href="carrinho.html">botao</a></button>
-    </div>
-
-    <!-- =============================== -->
     <!--        LISTA DE CATEGORIAS      -->
     <!-- =============================== -->
     <section class="categorias">
@@ -73,8 +64,8 @@
                     <p>Preço: R$XX.xx</p>
                     <label for="quantidade">Unidades:</label>
                     <input type="number" id="quantidade" name="quantidade" min="1" max="10" value="1">
-                    <p><a href="#">COMPRAR</a></p>
-                    <button class="btn-add" onclick="adicionarCarrinho('CS', this)">Adicionar ao carrinho</button>
+                    <button class="btn-add"><a href="#">COMPRAR</a></button>
+                    <button class="btn-add">Adicionar ao carrinho</button>
 
                 </ul>
             </div>
@@ -90,8 +81,8 @@
                     <p>Preço: R$XX.xx</p>
                     <label for="quantidade">Unidades:</label>
                     <input type="number" id="quantidade" name="quantidade" min="1" max="10" value="1">
-                    <p><a href="#">COMPRAR</a></p>
-                    <button class="btn-add" onclick="adicionarCarrinho('TPM', this)">Adicionar ao carrinho</button>
+                    <button class="btn-add"><a href="#">COMPRAR</a></button>
+                    <button class="btn-add">Adicionar ao carrinho</button>
 
                 </ul>
             </div>
@@ -113,8 +104,8 @@
                     <p>Preço: R$XX.xx</p>
                     <label for="quantidade">Unidades:</label>
                     <input type="number" id="quantidade" name="quantidade" min="1" max="10" value="1">
-                    <p><a href="#">COMPRAR</a></p>
-                    <button class="btn-add" onclick="adicionarCarrinho('VVE', this)">Adicionar ao carrinho</button>
+                    <button class="btn-add"><a href="#">COMPRAR</a></button>
+                    <button class="btn-add">Adicionar ao carrinho</button>
 
                 </ul>
             </div>
@@ -130,8 +121,8 @@
                     <p>Preço: R$XX.xx</p>
                     <label for="quantidade">Unidades:</label>
                     <input type="number" id="quantidade" name="quantidade" min="1" max="10" value="1">
-                    <p><a href="#">COMPRAR</a></p>
-                    <button class="btn-add" onclick="adicionarCarrinho('MPE', this)">Adicionar ao carrinho</button>
+                    <button class="btn-add"><a href="#">COMPRAR</a></button>
+                    <button class="btn-add">Adicionar ao carrinho</button>
 
                 </ul>
             </div>
@@ -153,11 +144,16 @@
                     <p>Preço: R$XX.xx</p>
                     <label for="quantidade">Unidades:</label>
                     <input type="number" id="quantidade" name="quantidade" min="1" max="10" value="1">
-                    <p><a href="#">COMPRAR</a></p>
-                    <button class="btn-add" onclick="adicionarCarrinho('CT', this)">Adicionar ao carrinho</button>
+                    <button class="btn-add"><a href="#">COMPRAR</a></button>
+                    <button class="btn-add">Adicionar ao carrinho</button>
 
                 </ul>
             </div>
+        </div>
+
+        <!-- botao do carrinho-->
+        <div class="categoria">
+            <button id="botao"><a href="carrinho.html">Lista de Desejos</a></button>
         </div>
 
     </section>

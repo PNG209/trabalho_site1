@@ -187,22 +187,3 @@ body, html {
     background: #f28aa3;
     color: white;
 }
-
-/* ========================== */
-/*      RESETAR CARRINHO      */
-/* ========================== */
-
-.btn-reset {
-    margin-left: 15px;
-    background: #878787;
-    border: none;
-    padding: 6px 12px;
-    color: white;
-    font-weight: bold;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.btn-reset:hover {
-    background: #515151;
-}

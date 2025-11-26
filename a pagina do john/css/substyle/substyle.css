@@ -124,6 +124,7 @@ body, html {
 
 .categoria ul{
     font-size: 20px;
+    align-content: center;
 }
 
 .categoria a {
@@ -190,7 +191,7 @@ body, html {
 
 /* botaum */
 
-.btn-add {
+.btn-add1 {
     padding: 10px 20px;
     background: #f28aa3;
     border: none;
@@ -201,25 +202,21 @@ body, html {
     transition: 0.3s;
 }
 
-.btn-add:hover {
+.btn-add1:hover {
     background: #d96982;
 }
 
-/* ========================== */
-/*      RESETAR CARRINHO      */
-/* ========================== */
-
-.btn-reset {
-    margin-left: 15px;
-    background: #878787;
+.btn-add2 {
+    padding: 10px 10px;
+    background: #a45d6e;
     border: none;
-    padding: 6px 12px;
+    border-radius: 8px;
     color: white;
-    font-weight: bold;
-    border-radius: 6px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.btn-reset:hover {
-    background: #515151;
+.btn-add:hover {
+    background: #7d3c4a;
 }
